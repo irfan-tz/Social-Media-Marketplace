@@ -9,7 +9,7 @@
 ## Security 
 
 - Authentication and Security: 
-	- JWT (JSON Web Tokens) or **OAuth2**: user authentication. 
+	- JWT (JSON Web Tokens) or **OAuth2**: user authentication with timed tokens. 
 	- **password hashing** using Django's `PBKDF2` or `Argon2`.
 	- Use Django's CSRF protection and XSS safeguards.
 	- HTTPS with **Let's Encrypt** for free SSL/TLS certificates.
