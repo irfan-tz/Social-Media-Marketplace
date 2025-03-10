@@ -1,5 +1,7 @@
 # -WEBSITE ONLY MEANT FOR DESKTOP-
 
+Check versions and updates here: [[Updates]]
+
 **Complete web server would be inside a [[Docker]] created using [[Docker-compose]].**
 ## Tech Stack
 
