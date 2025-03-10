@@ -1,10 +1,12 @@
 # -WEBSITE ONLY MEANT FOR DESKTOP-
+
+**Complete web server would be inside a [[Docker]] created using [[Docker-compose]].**
 ## Tech Stack
 
-- Backend: Django (Built-in security protection against SQL injection, CSRF, and XSS)
+- Backend: [[Django]] (Built-in security protection against SQL injection, CSRF, and XSS)
 - API: GraphQL (https://youtu.be/eIQh02xuVw4) (https://youtu.be/Zg4XIpnLWQg) 
-- Frontend: React.js
-- Database: PostgreSQL 
+- Frontend: [[React+Vite]]
+- Database: [[PostGreSQL]]  
 - Chat and Realtime:- Django Channels (For WebSocket-based real-time chat features), Redis (For handling WebSocket connections and message queues)
 - Web Server: Nginx (for reverse proxy and to serve static files) (https://youtu.be/JKxlsvZXG7c) (https://youtu.be/9nyiY-psbMs) (https://youtu.be/q8OleYuqntY **IMPORTANT**)
 
@@ -34,3 +36,6 @@ What to understand first and then what:
 Nginx -> Django -> (Not sequential but preferrably PostgreSQL) -> GraphQL -> React
 
 SSL/TLS: https://youtu.be/hExRDVZHhig, https://youtu.be/J7fI_jH7L84
+
+
+(Try looking at [[GPT Suggestions]] time to time.)
