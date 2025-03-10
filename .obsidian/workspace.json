@@ -1,0 +1,202 @@
+{
+  "main": {
+    "id": "80bbc9c1b09c900f",
+    "type": "split",
+    "children": [
+      {
+        "id": "0b6da40244aa9700",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bd2a6b1d65d1dd07",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PostGreSQL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PostGreSQL"
+            }
+          }
+        ]
+      },
+      {
+        "id": "1e02c31f249dbd83",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ca0e73a5dc76747c",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "6b514ce2ddac07df",
+    "type": "split",
+    "children": [
+      {
+        "id": "b82288f08d1a38c0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e056eb370518c5cf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5e816f6a7bc17847",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3d17420f0141fb5a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "8b3a84a7cd0d3b15",
+    "type": "split",
+    "children": [
+      {
+        "id": "c941f6f31a9f6443",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "117ff8c766de4e04",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "a0ded50309e7955a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "66e0b2adc2c8cf6d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "43278ef07fd4efe7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "ca0e73a5dc76747c",
+  "lastOpenFiles": [
+    "Updates.md",
+    "Ideas.md",
+    "PostGreSQL.md",
+    "React+Vite.md",
+    "Django.md",
+    "Django settings.md",
+    "Docker.md",
+    "Docker-compose.md",
+    "GPT Suggestions.md",
+    "Welcome.md",
+    "create a link.md",
+    "Project/PostGreSQL.md",
+    "Project/Ideas.md",
+    "Project/GPT Suggestions.md",
+    "Project"
+  ]
+}
