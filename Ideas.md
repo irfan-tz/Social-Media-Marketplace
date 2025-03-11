@@ -5,6 +5,9 @@ Check versions and updates here: [[Updates]]
 **Complete web server would be inside a [[Docker]] created using [[Docker-compose]].**
 ## Tech Stack
 
+### To implement in future:
+- Add session timeout feature
+
 - Backend: [[Django]] (Built-in security protection against SQL injection, CSRF, and XSS)
 - API: GraphQL (https://youtu.be/eIQh02xuVw4) (https://youtu.be/Zg4XIpnLWQg) 
 - Frontend: [[React+Vite]]
