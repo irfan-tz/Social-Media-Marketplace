@@ -35,6 +35,9 @@ Check versions and updates here: [[Updates]]
 ## File Permission:
 - Make sure appropriate user permission to nginx.conf
 
+## Users:
+- UserCreateView has permission_classes = [permissions.AllowAny]
+
 ## Resources:
 
 What to understand first and then what:
