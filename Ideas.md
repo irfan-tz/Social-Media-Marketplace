@@ -38,6 +38,9 @@ Check versions and updates here: [[Updates]]
 ## Users:
 - UserCreateView has permission_classes = [permissions.AllowAny]
 
+## Registration.jsx
+- 'handleSubmit' has lots of logs for debugging, remove them at deployment.
+
 ## Resources:
 
 What to understand first and then what:
