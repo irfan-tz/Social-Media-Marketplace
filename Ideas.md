@@ -29,6 +29,10 @@ Check versions and updates here: [[Updates]]
 - When recieving from client, change timestamp to of server's.
 
 # Future Implementation
+
+## Gunicorn  
+- Replace manage.py running django with gunicorn for handling wsgi application
+  
 ## Firewall:
 - Hide all other ports from public, show only port 443 (https)
 
