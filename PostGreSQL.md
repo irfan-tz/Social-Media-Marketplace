@@ -4,8 +4,9 @@ There, open postgresql console mode using `psql`
 User: postgres
 password: <0vDw9£8C{me
 
-psql password for postgres user: 123123
+psql password for postgres user: $pu?z#OrFnr5
 OUR DATABASE: group17_db
+group17 user password: was(S(]\%6nH
 
 Access postgreSQL database:
 1. Change to postgres user
