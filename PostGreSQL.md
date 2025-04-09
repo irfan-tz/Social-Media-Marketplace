@@ -2,11 +2,11 @@ By default you can only login as 'postgresql' system user, which can be done by 
 There, open postgresql console mode using `psql`
 
 User: postgres
-password: <0vDw9£8C{me
+password: )dr8;E68sdg6  
 
-psql password for postgres user: $pu?z#OrFnr5
-OUR DATABASE: group17_db
-group17 user password: was(S(]\%6nH
+psql password for postgres user: $pu?z#OrFnr5   
+OUR DATABASE: group17_db   
+group17 user password: yF2kC@ln6!9VN)    
 
 Access postgreSQL database:
 1. Change to postgres user
