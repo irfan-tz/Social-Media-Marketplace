@@ -33,16 +33,16 @@ For this repository, I have changed few things and have not included the fail2ba
 2.	In /etc/nginx/nginx.conf put the nginx.conf file from the front-facing-nginx-conf dir.
 3.	Now setup postgresql and connect it to the Django backend by putting its detail in the settings.py
 4.	Create an .env file in the root dir  
-   `SECRET_KEY=your_django_secret_key  
-  	DB_NAME=your_database_name  
-  	DB_USER=your_database_user  
-  	DB_PASSWORD=your_database_password  
-  	EMAIL_HOST_USER=your_email_user  
-  	EMAIL_HOST_PASSWORD=your_email_password  
-  	ENCRYPTION_KEY=your_encryption_key`  
+   `SECRET_KEY=your_django_secret_key`   
+  	`DB_NAME=your_database_name`  
+  	`DB_USER=your_database_user`  
+  	`DB_PASSWORD=your_database_password`   
+  	`EMAIL_HOST_USER=your_email_user`  
+  	`EMAIL_HOST_PASSWORD=your_email_password`    
+  	`ENCRYPTION_KEY=your_encryption_key`  
 6.	Now run following on the root dir  
-`$ sudo systemctl start docker    
-$ docker-compose –f docker-compose.prod.yaml up –build  `
-(This would build and start the containers for frontend, backend and redis)
+`$ sudo systemctl start docker`      
+`$ docker-compose –f docker-compose.prod.yaml up –build`  
+(This would build and start the containers for frontend, backend and redis)  
 7.	Create a superuser admin in django container
-$ docker-compose exec backend python manage.py createsuperuser 
+`$ docker-compose exec backend python manage.py createsuperuser`
