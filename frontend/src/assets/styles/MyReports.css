@@ -1,0 +1,107 @@
+.my-reports-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.my-reports-container h1 {
+    margin-bottom: 2rem;
+    color: var(--primary-text);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+.reports-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.report-card {
+    background: var(--secondary-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.report-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+}
+
+.report-info h3 {
+    margin: 0;
+    margin-bottom: 0.25rem;
+}
+
+.report-date {
+    color: var(--secondary-text);
+    font-size: 0.85rem;
+}
+
+.report-status {
+    padding: 0.4rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.status-pending {
+    background-color: rgba(234, 179, 8, 0.2);
+    color: #eab308;
+}
+
+.status-reviewing {
+    background-color: rgba(59, 130, 246, 0.2);
+    color: #3b82f6;
+}
+
+.status-resolved {
+    background-color: rgba(34, 197, 94, 0.2);
+    color: #22c55e;
+}
+
+.status-action {
+    background-color: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+.report-details {
+    margin-bottom: 1.5rem;
+}
+
+.report-details p {
+    margin: 0.5rem 0;
+}
+
+.evidence-info {
+    font-style: italic;
+}
+
+.report-footer {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+
+.help-text {
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+    font-style: italic;
+}
+
+.no-reports-message {
+    text-align: center;
+    padding: 3rem;
+    color: var(--secondary-text);
+    background-color: var(--secondary-bg);
+    border-radius: 10px;
+}
+
+.loading-indicator {
+    text-align: center;
+    padding: 2rem;
+}

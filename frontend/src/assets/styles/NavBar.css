@@ -1,0 +1,56 @@
+.navbar {
+    background-color: var(--secondary-bg);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    /* z-index: 1000; */
+    /* No position fixed/sticky as we're using flex layout */
+}
+
+.navbar-brand a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-text);
+}
+
+.navbar-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.navbar-links a {
+    color: var(--secondary-text);
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+    color: var(--primary-text);
+}
+
+.demo-link {
+    background-color: var(--accent-color);
+    color: var(--primary-text) !important;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.demo-link:hover {
+    background-color: var(--accent-hover);
+}
+
+.demo-badge {
+    background-color: var(--error-color);
+    color: var(--primary-text) !important;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.demo-badge:hover {
+    opacity: 0.9;
+}

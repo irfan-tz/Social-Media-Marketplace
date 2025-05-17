@@ -1,0 +1,37 @@
+FROM python:3.10-slim
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    python3-dev \
+    curl \
+    netcat-openbsd \
+    ca-certificates \
+    postgresql-client \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app/backend
+
+# Create logs directory
+RUN mkdir -p /app/backend/logs && chmod 755 /app/backend/logs
+
+# Install Python dependencies
+COPY backend/MyProject/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install daphne gunicorn
+
+# Copy application code
+COPY backend/MyProject .
+
+# Entrypoint script with Redis wait
+RUN echo "#!/bin/sh\n" \
+          "echo 'Waiting for Redis...'\n" \
+          "while ! nc -z redis 6379; do sleep 1; done\n" \
+          "python manage.py migrate --no-input\n" \
+          "exec \"\$@\"" > /entrypoint.sh && \
+    chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
+
+# Production server (ASGI)
+CMD ["daphne", "--bind", "0.0.0.0", "--port", "8000", "myproject.asgi:application"]
