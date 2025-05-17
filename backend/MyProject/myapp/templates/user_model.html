@@ -1,0 +1,16 @@
+<!-- myapp/templates/user_model.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Model Data</title>
+</head>
+<body>
+    <h1>User Model Data</h1>
+    <ul>
+        {% for user in users %}
+            <li>{{ user.first_name }} {{ user.last_name }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'home' %}">Back to Home</a>
+</body>
+</html>

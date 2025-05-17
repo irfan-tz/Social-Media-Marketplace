@@ -1,0 +1,244 @@
+.report-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(3px);
+}
+
+.report-modal-content {
+    background: var(--card-gradient);
+    border-radius: 16px;
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease-out;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.report-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.75rem;
+}
+
+.report-modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    background: linear-gradient(
+        45deg,
+        var(--accent-color),
+        var(--gradient-end)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: var(--secondary-text);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close-button:hover {
+    color: var(--accent-color);
+}
+
+.report-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.success-message {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--success-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.success-message i {
+    font-size: 3rem;
+    animation: pulse 2s infinite;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cancel-button {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--secondary-text);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1;
+}
+
+.cancel-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--primary-text);
+}
+
+.submit-button {
+    background: linear-gradient(
+        to right,
+        var(--gradient-start),
+        var(--gradient-end)
+    );
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 2;
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+}
+
+.action-button.block-button {
+    background: #6b7280;
+    color: white;
+}
+
+.action-button.block-button:hover {
+    background: #4b5563;
+}
+
+.action-button.report-button {
+    background: #ef4444;
+    color: white;
+}
+
+.action-button.report-button:hover {
+    background: #dc2626;
+}
+
+.blocked-users-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--card-gradient);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.blocked-users-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blocked-user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.2s;
+}
+
+.blocked-user-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+.blocked-date {
+    color: var(--secondary-text);
+    font-size: 0.8rem;
+}
+
+.action-button.unblock-button {
+    background: transparent;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.action-button.unblock-button:hover {
+    background: rgba(99, 102, 241, 0.1);
+}
+
+.no-blocks-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+    color: var(--secondary-text);
+    text-align: center;
+    gap: 1rem;
+}
+
+.no-blocks-message i {
+    font-size: 3rem;
+    color: var(--success-color);
+}
+
+.blocked-status {
+    display: flex;
+    align-items: center;
+    background-color: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    gap: 0.5rem;
+}
+
+.unblock-button {
+    background-color: #4b5563;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.unblock-button:hover {
+    background-color: #374151;
+    transform: translateY(-2px);
+}
