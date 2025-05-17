@@ -14,31 +14,30 @@ For this repository, I have changed few things and have not included the fail2ba
 ## Security
 
 ### Page-wise
-#### 1.	Page-wise
-##### Login/Registration
+#### Login/Registration
 -	To avoid exploitation of account creation by lots of random/unauthenticated accounts, we added a layer of security by only allowing creation of account by an email address and to restrict the use of temporary emails, we implemented checking the domain server of the email address allowing only few email
 domains such as gmail, hotmail, live, outlook, yahoo, protonmail etc.
 -	And to avoid exploitation of email authentication system that sends the OTP, we only allowed certain number of OTPs in a time limit.
 -	To change password, the user must contact the administrator.
 
-##### Profile
+#### Profile
 -	User can only upload profile image or verification document of max 2MB.
 -	Users can change password or delete their account only after
 authenticating themselves by the OTP received on the registered email address.
 -	Email and username cannot be changed.
 
-##### Other User page
+#### Other User page
 -	Other users’ page does not reveal their email address.
 
-##### Messaging
+#### Messaging
 -	For security purpose, users can only send message to their friends.
 -	A text-message has a defined length limit.
 -	Image/video attachments can only be under 10MB.
 
-##### Group-Messaging
+#### Group-Messaging
 -	For security purpose, only verified users that have uploaded and verified by the administrator can use this group messaging feature.
 
-##### Payment
+#### Payment
 -	Only the last 4-digits of credit card info is saved and cvv, expiry are not saved at all.
 
 ### Other Security
