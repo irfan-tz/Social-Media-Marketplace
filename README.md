@@ -1,6 +1,7 @@
 # Social Media Marketplace
 This project was made for course "Foundation of Computer Security" hence the whole website is made and the setup is done with security in mind.  
-For this repository, I have changed few things and have not included the fail2ban setup here.
+For this repository, I have changed few things and have not included the fail2ban setup here.   
+**[Website preview and navigation](navigate-website.pdf)**
 
 ## Overview
 - **Frontend**: React application served via NGINX.
